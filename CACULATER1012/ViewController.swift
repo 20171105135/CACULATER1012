@@ -103,6 +103,14 @@ class ViewController: UIViewController {
         temp = temp * temp
         CACULATERDisplay.text = "\(temp)"
     }
+    @IBAction func BUTTON2(_ sender: Any) {
+         temp = Double(CACULATERDisplay.text!)!
+        temp = sqrt (temp);
+        CACULATERDisplay.text = "\(temp)"
+    }
+    @IBAction func BUTTON3(_ sender: Any) {
+          CACULATERDisplay.text = "-" + CACULATERDisplay.text!
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
